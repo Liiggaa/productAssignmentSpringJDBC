@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Raleway:ital,wght@0,400;0,500;1,600&display=swap"
+          rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="nav-link" href="./">Home</a></li>
+            <li><a class="nav-link" href="/products">View all products</a></li>
+            <li><a class="nav-link" href="/addProduct">Add product</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h2>UPDATE INFORMATION ABOUT PRODUCT</h2>
+
+<section class="add-product">
+    <div class="form-container">
+    <form th:action="@{/updateProduct/{productId}(productId=${product.id})}" method="post">
+
+    <input type="hidden" name="id" th:value="${product.id}"/>
+
+    <div class="input-box-1">
+        <input class="block" name="name" type="text" placeholder="Product name" th:value="${product.name}">
+    </div>
+
+    <div class="input-box-2">
+        <input class="block" name="description" type="text" placeholder="Description" th:value="${product.description}">
+    </div>
+
+    <div class="input-box-3">
+        <input class="block" name="quantity" type="number" placeholder="Quantity" th:value="${product.quantity}">
+    </div>
+
+    <div class="input-box-4">
+        <input class="block" name="price" type="text" placeholder="Price" th:value="${product.price}">
+    </div>
+
+    <div class="input-box-5">
+        <span class="available">Available</span>
+        <input class="checkbox" type="checkbox" name="available" th:checked="${product.isAvailable()}">
+    </div>
+
+    <div class="input-box-6">
+        <button class="button" type="submit">Update</button>
+    </div>
+
+    </form>
+    </div>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

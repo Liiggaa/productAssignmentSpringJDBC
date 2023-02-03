@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; /* 10px/ 16px = 0.625= 62.5%  setting for making design responsive */
+}
+
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 2rem;
+    background-color: #343a40;
+
+
+}
+
+body{
+    font-family: "Raleway", sans serif;
+    color: #343a40;
+}
+
+
+.navigation{
+    list-style: none;
+    display: flex;
+    justify-content:right;
+    gap: 3.2rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.nav-link:link,
+.nav-link:visited{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: white;
+
+}
+
+.nav-link:hover,
+.nav-link:active{
+    font-weight: 500;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 150%;
+    margin-left:6rem;
+    margin-top: 6rem;
+
+}
+
+.main-section{
+    height: 100vh;
+    margin-top: 2rem;
+    background-size: 100%;
+
+}
+
+.add-product{
+    height: 100vh;
+}
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+    border: #343a40 solid 0.2rem;
+    text-decoration: none;
+    padding: 1.2rem 2rem;
+    margin-top: 1.5rem;
+    margin-left: 22rem;
+}
+
+.btn:hover,
+.btn:active{
+    border: #fab005 solid 0.2rem;
+}
+
+.photo-products{
+    margin-top: 2rem;
+    max-width:60rem;
+    height:auto;
+    border-radius: 0.6rem;
+}
+
+.center{
+    margin: 0 auto;
+}
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:4rem;
+    margin-top: 6rem;
+}
+
+/*.section1{*/
+/*    background-color: darkslategrey;*/
+
+/*}*/
+
+/*.section2{*/
+/*    background-color: lightgreen;*/
+
+/*}*/
+
+h2{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    justify-items: center;
+    /*background-color: #fab005;*/
+    margin: 0 auto;
+    padding-top:4rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.block:hover{
+    border: #fab005 solid 0.1rem;
+}
+
+
+.input-box-1{
+    /*background-color: darkslategrey;*/
+}
+.input-box-6{
+    /*background-color: darkblue;*/
+}
+
+
+
+input{
+    background-color: white;
+    border:#343a40 solid 0.2rem;
+    height: 4rem;
+    width: 30rem;
+    border-radius: 0.2rem;
+    font-family: "Raleway", sans serif;
+    font-size: large;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.available{
+    font-size: 2rem;
+    padding-left:2rem
+}
+
+/*input[type=checkbox]:checked{*/
+/*    background-color: #fab005;*/
+/*}*/
+
+.button{
+    display:inline-block;
+    font-family: "Raleway", sans serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    color: #343a40;
+    background-color: white;
+    border: #343a40 solid 0.2rem;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 10rem;
+    margin-top:2rem;
+}
+.button:hover,
+.button:active{
+    border: #fab005 solid 0.2rem;
+}
+
+
+
+/*Product table*/
+.product-table {
+    margin: 4rem auto 0;
+    width: 90%;
+    border-collapse: collapse; /* remove the default spacing between table cells */
+}
+
+.product-table th, .product-table td {
+    padding: 0.8rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 2rem;
+}
+
+.product-table th {
+    background-color: #c2c4c6;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.product-table tr:nth-child(even) { /* every even-number column, set color */
+    background-color: #f9f9f9;
+}
+
+.th{
+    text-align: center;
+}
+
+
+
+.delete-edit-link:link,
+.delete-edit-link:visited{
+    text-decoration: none;
+    font-weight: 400;
+    color: #343a40;
+}
+
+.delete-edit-link:hover,
+.delete-edit-link:active{
+    font-weight: 500;
+}

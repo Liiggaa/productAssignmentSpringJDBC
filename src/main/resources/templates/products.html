@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Raleway:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="nav-link" href="./">Home</a></li>
+            <li><a class="nav-link" href="/products">View all products</a></li>
+            <li><a class="nav-link" href="/addProduct">Add product</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--table-->
+  <table class="product-table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>isAvailable</th>
+        <th>Delete product</th>
+        <th>Update</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product:${productList}">
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.description}"></td>
+        <td th:text="${product.quantity}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.isAvailable()}"></td>
+        <td><a class="delete-edit-link" th:href="'/addProduct/delete/' + ${product.getId()}"><span class="delete-edit">DELETE</span></a></td>
+        <td><a class="delete-edit-link" th:href="'/edit' + ${product.getId()}"><span class="delete-edit">EDIT</span></a></td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>

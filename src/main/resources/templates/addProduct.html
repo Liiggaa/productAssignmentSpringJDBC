@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Raleway:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="nav-link" href="./">Home</a></li>
+            <li><a class="nav-link" href="/products">View all products</a></li>
+            <li><a class="nav-link" href="/addProduct">Add product</a></li>
+        </ul>
+    </nav>
+</header>
+    <h2>ADD INFORMATION ABOUT PRODUCT</h2>
+    <section class="add-product">
+
+            <div class="form-container">
+                <form action="/addProduct" method="post">
+
+                    <div class="input-box-1">
+                        <input class="block" name="name" type="text" placeholder="Product name">
+                    </div>
+
+                    <div class="input-box-2">
+                        <input class="block" name="description" type="text" placeholder="Description">
+                    </div>
+
+                    <div class="input-box-3">
+                        <input class="block" name="quantity" type="number" placeholder="Quantity">
+                    </div>
+
+                    <div class="input-box-4">
+                        <input class="block" name="price" type="text" placeholder="Price">
+                    </div>
+
+                    <div class="input-box-5">
+                        <span class="available">Available</span><input class="checkbox" type="checkbox" name="available">
+                    </div>
+
+                      <div class="input-box-6">
+                          <button class="button" type="submit">Submit</button>
+                      </div>
+
+                </form>
+            </div>
+
+</section>
+</body>
+</html>
