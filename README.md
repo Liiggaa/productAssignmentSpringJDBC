@@ -11,16 +11,25 @@ Technologies Used:
   - MySQL
 
 ## Features:
-Add Product: Users can add a new product by entering the product details in the "add Product" form and submitting it. 
+- Home Page:
+![Screenshot](index-page.jpg)
+
+- Add Product: Users can add a new product by entering the product details in the "add Product" form and submitting it. 
 http://localhost:8080/addProduct 
 
-View Products: Users can view all the products in the "products" page, which displays a list of products retrieved from the database using JDBC.
+![Screenshot](addProduct-page.jpg)
+
+- View Products: Users can view all the products in the "products" page, which displays a list of products retrieved from the database using JDBC.
 http://localhost:8080/products
 
-Update Product: Users can update the details of an existing product by clicking the "Edit" button next to the product in the "products" page
+![Screenshot](products-page.jpg)
+
+- Update Product: Users can update the details of an existing product by clicking the "Edit" button next to the product in the "products" page
 http://localhost:8080/edit
 
-Delete Product: Users can delete a product by clicking the "Delete" button next to the product in the "products" page.
+![Screenshot](edit-page.jpg)
+
+- Delete Product: Users can delete a product by clicking the "Delete" button next to the product in the "products" page.
 http://localhost:8080/products
 
 
