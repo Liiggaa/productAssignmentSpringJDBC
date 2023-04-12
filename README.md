@@ -36,8 +36,29 @@ http://localhost:8080/products
 
 ## Setup Instructions:
 * Create a MySQL database with the name "spring_product".
-* Update the database connection details in the ProductRepository class's getConnection() method, including the username and password for your MySQL server.
 * Import the project into your preferred Java IDE.
+* Update the database connection details in the ProductRepository class's getConnection() method, including the username and password for your MySQL server.
+
+```
+private Connection getConnection() {
+    String username = "YOUR_MYSQL_USERNAME";
+    String password = "YOUR_MYSQL_PASSWORD";
+    String database = "spring_product";
+
+    String url = "jdbc:mysql://localhost:3306/" + database;
+
+    Connection connection = null;
+
+    try {
+        connection = DriverManager.getConnection(url, username, password);
+    } catch (SQLException e) {
+        e.printStackTrace();
+    }
+
+    return connection;
+}
+```
+
 * Build and run the project on a local server (e.g., Tomcat).
 * Access the web application in your web browser using the URL provided by your local server (http://localhost:8080).
 
